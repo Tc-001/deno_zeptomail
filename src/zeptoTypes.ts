@@ -16,12 +16,12 @@ export interface simpleSend {
 	inline_images?: Attachment[];
 }
 
-export interface templateSend extends Omit<simpleSend, "textbody"|"htmlbody"> {
+export interface templateSend extends Omit<simpleSend, "textbody"|"htmlbody"|"subject"> {
 	mail_template_key: string;
 	merge_info: mergeInfo;
 }
 
-export interface templateBulkSend extends Omit<simpleSend, "textbody"|"htmlbody"|"to"> {
+export interface templateBulkSend extends Omit<simpleSend, "textbody"|"htmlbody"|"subject"|"to"> {
 	mail_template_key: string;
 	to: bulkSendTo;
 }
@@ -72,7 +72,7 @@ interface bulkSendTo extends To {
 
 interface User {
 	address: string;
-	name: string;
+	name?: string;
 }
 
 interface MIMEHeaders {
