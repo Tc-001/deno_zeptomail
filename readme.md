@@ -16,3 +16,9 @@ let client = new SendMailClient({url, token});
 Need help? See:
 - https://www.npmjs.com/package/zeptomail
 - https://www.zoho.com/zeptomail/help/api/email-sending.html
+
+### Versions
+- x.x.x 
+    - Upstream update
+- x.x.x.y
+    - Local update
