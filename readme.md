@@ -20,5 +20,5 @@ Need help? See:
 ### Versions
 - x.x.x 
     - Upstream update
-- x.x.x.y
+- x.x.x-y
     - Local update
