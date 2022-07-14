@@ -5,7 +5,7 @@ Deno port of [zeptomail](https://www.npmjs.com/package/zeptomail) with added typ
 ```ts
 import { SendMailClient } from "https://deno.land/x/deno_zeptomail/mod.ts";
 
-const url = "api.zeptomail.com/";
+const url = "api.zeptomail.<tld>/";
 const token = "<Send mail token>";
 
 let client = new SendMailClient({url, token});
